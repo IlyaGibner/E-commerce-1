@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* стили основной обертки */
+div.main_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* основные спецификации кнопок */
+.button {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #4a99d3;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+}
+/* центрирование изображения внутри кнопки */
+img.img_button {
+  position: absolute;
+  top: 22%;
+  left: 12%;
+}
+/* спецификации анимации кнопок при наведении */
+.button:hover {
+  /* тень кнопок при наведение */
+  box-shadow: 3px 3px 10px 2px rgba(100, 100, 100, 0.5);
+  /* движение фона кнопок при наведении */
+
+  /* Время, скорость теней */
+  transition: 0.5s;
+}
+
+/* отступ, расстояние между кнопками */
+a:first-of-type {
+  margin-right: 20px;
+}
+
+
+/* анимация изображения в кнопке при наведении */
+/* навдение заточено на фон кнопки, а не на само изображение, но
+стили применяются к изображению в кнопке */
+a.button:hover>img {
+  /* тень изображения при наведении на кнопку*/
+  filter: drop-shadow(2px 2px 2px #000);
+  /* также необходимо сделать, чтобы данная тень работала в браузерах
+  на движке Chromium */
+  -webkit-filter: drop-shadow(2px 2px 2px #000);
+  /* Скорость анимации.
+  в данном случае появления тени изображения
+  и вертелки при наведени на кнопки */
+  transition: all 0.5s ease;
+  /* Видоизменения изображения в кнопке при наведении на кнопку
+  сдвиг по оси Y и вращение на 360 градусов и завершение перемещения
+  в изначальной точке*/
+  transform: translateY(-10px) rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* aaaaaaaaaa */
