@@ -206,6 +206,7 @@ ul.nav_menu {
 /* стили для текста под заголовком */
 p.header_text {
   margin-bottom: 60px;
+  letter-spacing: 2px;
 }
 
 
@@ -234,6 +235,10 @@ img.left_mobile {
   left: 100px;
   top: 100px;
 }
+
+
+
+
 
 
 
@@ -277,7 +282,6 @@ img.img_button {
 a:first-of-type {
   margin-right: 20px;
 }
-
 
 /* анимация изображения в кнопке при наведении */
 /* навдение заточено на фон кнопки, а не на само изображение, но
